@@ -16,7 +16,7 @@ for file in os.listdir('.'):
     if fnmatch.fnmatch(file, '*.csv'):
         fullFilename = file
         filename = file[:-4]
-        #print(filename)
+        print(filename)
         
         with open(fullFilename) as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
